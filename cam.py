@@ -15,8 +15,8 @@ from geopy.geocoders import Nominatim
 import time
 
 # Twilio configuration
-account_sid = "AC2873fa6cfd374bd8f2bc736b6fda2444"
-auth_token = "dd198819226e8b648213b5dcbbba9b92"
+account_sid = ""
+auth_token = ""
 client = Client(account_sid, auth_token)
 
 # Initialize pygame mixer for playing alert sound
