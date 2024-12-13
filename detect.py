@@ -8,8 +8,8 @@ from twilio.rest import Client
 from imutils import face_utils
 
 # Twilio configuration"
-account_sid = "AC2873fa6cfd374bd8f2bc736b6fda2444"
-auth_token = "dd198819226e8b648213b5dcbbba9b92"
+account_sid = ""
+auth_token = ""
 client = Client(account_sid, auth_token)
 
 # Initialize pygame mixer for playing alert sound
@@ -98,8 +98,8 @@ while True:
                         # Make a call if the alarm has been triggered more than 3 times
                         if alarm_counter >= 3:
                             call = client.calls.create(
-                                to="+919955796914",
-                                from_="+14124193845",
+                                to="+",
+                                from_="+1",
                                 url="http://demo.twilio.com/docs/voice.xml"  # You can customize the URL with your own message
                             )
                             alarm_counter = 0
