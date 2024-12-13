@@ -4,11 +4,11 @@ This project implements a real-time drowsiness detection system using computer v
 
 ## Features ##
 
-*-Real-time detection:* Uses a webcam to capture video and process frames to detect drowsiness.
+* -Real-time detection: * Uses a webcam to capture video and process frames to detect drowsiness.
 
-*-Eye aspect ratio (EAR):* Calculates the EAR to determine if the user's eyes are closed for an extended period.
+* -Eye aspect ratio (EAR): * Calculates the EAR to determine if the user's eyes are closed for an extended period.
 
-*-Alert mechanism:*
+* -Alert mechanism: *
 
   -Displays alert messages on the video feed.
 
@@ -16,11 +16,11 @@ This project implements a real-time drowsiness detection system using computer v
 
   -Makes automated phone calls via the Twilio API when drowsiness persists.
 
-*-Twilio integration:* Sends phone calls to notify when the user is potentially drowsy.
+* -Twilio integration: * Sends phone calls to notify when the user is potentially drowsy.
 
 ## Workflow ##
 
-*1. Twilio Alert Workflow*
+* 1. Twilio Alert Workflow *
 
 The Twilio API is configured to make automated calls to a specified number if the drowsiness alarm is triggered more than 3 times. Below is an example of a Twilio call:
 
@@ -31,18 +31,18 @@ The Twilio API is configured to make automated calls to a specified number if th
   -Message URL: http://demo.twilio.com/docs/voice.xml (can be customized for a personal message).
 
 
-*2. Alert Signal Indication*
+* 2. Alert Signal Indication *
 
 The system displays an alert message and plays an alarm sound when drowsiness is detected.
 
 
-##Requirements##
+* Requirements *
 
-*Python Version*
+* Python Version *
 
   -Python 3.7 or newer
 
-*Libraries:*
+* Libraries: *
 
   -cv2 (OpenCV)
 
@@ -56,33 +56,33 @@ The system displays an alert message and plays an alarm sound when drowsiness is
 
   -scipy
 
-*Hardware:*
+* Hardware: *
 
   -Webcam for real-time video capture
 
-##Setup and Usage##
+* Setup and Usage *
 
-*Install Dependencies:*
+* Install Dependencies: *
 
 pip install opencv-python imutils pygame dlib twilio scipy
 
-*Download Facial Landmarks Model:*
+* Download Facial Landmarks Model: *
 
 Download the shape_predictor_68_face_landmarks.dat file from Dlib's repository and place it in the project directory.
 
-*Run the Script:*
+* Run the Script: *
 
 Execute the Python script:
 
 python detect.py
 
-*Twilio Configuration:*
+* Twilio Configuration: *
 
   -Replace account_sid and auth_token with your Twilio account credentials.
 
   -Update the to and from phone numbers in the script.
 
-##Key Variables##
+## Key Variables ##
 
   -thresh: Threshold for the eye aspect ratio to indicate drowsiness.
 
@@ -90,7 +90,7 @@ python detect.py
 
   -alarm_counter: Tracks the number of times the alarm has been triggered to make phone calls.
 
-##How It Works##
+## How It Works ##
 
 1. Video Stream: Captures frames from the webcam.
 
@@ -108,13 +108,13 @@ python detect.py
 
   -Makes a phone call using the Twilio API.
 
-##Example Outputs##
+## Example Outputs ##
 
-*-EAR Above Threshold:* No alerts triggered, EAR values are printed for debugging.
+* -EAR Above Threshold: * No alerts triggered, EAR values are printed for debugging.
 
-*-EAR Below Threshold:* Alerts are displayed on the video feed, and the alarm sound is played.
+* -EAR Below Threshold: * Alerts are displayed on the video feed, and the alarm sound is played.
 
-##Customization##
+## Customization ##
 
   -Modify the thresh and frame_check values for sensitivity adjustment.
 
@@ -123,7 +123,7 @@ python detect.py
   -Change the alert sound by replacing music.wav with a different audio file.
 
 
-##License##
+## License ##
 This project is licensed under the MIT License. Feel free to use, modify, and distribute it.
 
 Note: Ensure your webcam is functional and the required libraries are installed before running the script.
