@@ -1,14 +1,14 @@
-## AwakeGuard ##
+# AwakeGuard #
 
 This project implements a real-time drowsiness detection system using computer vision and the Twilio API. It monitors a person's eye aspect ratio (EAR) to detect signs of drowsiness and triggers alerts via sound and phone calls.
 
-Features
+## Features ##
 
-Real-time detection: Uses a webcam to capture video and process frames to detect drowsiness.
+*Real-time detection:* Uses a webcam to capture video and process frames to detect drowsiness.
 
-Eye aspect ratio (EAR): Calculates the EAR to determine if the user's eyes are closed for an extended period.
+*Eye aspect ratio (EAR):* Calculates the EAR to determine if the user's eyes are closed for an extended period.
 
-Alert mechanism:
+## Alert mechanism: ##
 
 Displays alert messages on the video feed.
 
@@ -18,7 +18,7 @@ Makes automated phone calls via the Twilio API when drowsiness persists.
 
 Twilio integration: Sends phone calls to notify when the user is potentially drowsy.
 
-Workflow
+## Workflow ##
 
 1. Twilio Alert Workflow
 
@@ -26,7 +26,7 @@ The Twilio API is configured to make automated calls to a specified number if th
 
 From: +14124193845
 
-To: +919955796914
+To: +91995*******
 
 Message URL: http://demo.twilio.com/docs/voice.xml (can be customized for a personal message).
 
