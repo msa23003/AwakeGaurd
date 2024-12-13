@@ -4,7 +4,7 @@ This project implements a real-time drowsiness detection system using computer v
 
 ## Features ##
 
-* -Real-time detection: * Uses a webcam to capture video and process frames to detect drowsiness.
+* -Real-time detection: Uses a webcam to capture video and process frames to detect drowsiness.
 
 * -Eye aspect ratio (EAR): * Calculates the EAR to determine if the user's eyes are closed for an extended period.
 
