@@ -72,15 +72,13 @@ Download the shape_predictor_68_face_landmarks.dat file from Dlib's repository a
 
 ### Run the Script: 
 
-Execute the Python script:
-
-python detect.py
+ Execute the Python script: python detect.py
 
 ### Twilio Configuration: 
 
-  -Replace account_sid and auth_token with your Twilio account credentials.
+  * Replace account_sid and auth_token with your Twilio account credentials.
 
-  -Update the to and from phone numbers in the script.
+  * Update the to and from phone numbers in the script.
 
 ### Key Variables 
 
@@ -102,11 +100,11 @@ python detect.py
 
 5. Alert Trigger: If EAR is below the threshold for a specified number of frames, it:
 
-  -Displays alert messages.
+   * Displays alert messages.
 
-  -Plays an alarm sound.
+   * Plays an alarm sound.
 
-  -Makes a phone call using the Twilio API.
+   * Makes a phone call using the Twilio API.
 
 ### Example Outputs 
 
